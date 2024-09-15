@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.input-block {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.bank-cards {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style-type: none;
+    width: 100%;
+    gap: 10px;
+}
+
+li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center center;
+    background-color: #3d3b3b;
+}
+
+.amex {
+    mask-image: url(../svg/amex-svgrepo-com.svg);
+}
+
+.discover {
+    mask-image: url(../svg/discover-svgrepo-com.svg);
+}
+
+.jcb {
+    mask-image: url(../svg/jcb-svgrepo-com.svg);
+}
+
+.mastercard {
+    mask-image: url(../svg/mastercard-svgrepo-com.svg);
+}
+
+.mir {
+    mask-image: url(../svg/mir-svgrepo-com.svg);
+}
+
+.visa {
+    mask-image: url(../svg/visa-svgrepo-com.svg);
+}
+
+.active {
+    background-color: #000;
+    opacity: 1;
+    transform: scale(1.2);
+    transition: transform ease-in-out 0.15s
+}
+
+.not-active {
+    opacity: 0.4;
+}
+
+.input-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.field {
+    width: 60%;
+    height: 40px;
+    padding: 5px;
+}
+
+.accept {
+    border-color: #2bff00;
+}
+
+.not-accept {
+    border-color: #ff0000;
+}
+
+.input-button {
+    width: 35%;
+    background-color: #03f554;
+    border: 0;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.error-text {
+    background-color: rgb(255 0 0 / 50%);
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
